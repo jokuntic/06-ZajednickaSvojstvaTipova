@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Diagnostics;
-
+using System.Numerics;
 namespace Vsite.CSharp
 {
+    
     public struct KompleksniBroj
     {
         public KompleksniBroj(double realni, double imaginarni)
@@ -19,9 +20,8 @@ namespace Vsite.CSharp
 
         // TODO: Pregaziti (override) metodu ToString tako da vraća niz u obliku: "2+3j", "2-j", "0", "j", "-j".
         public override string ToString()
-        {
-
-            return string.Format("{0}+{1}j",Realni,Imaginarni);
+        { 
+            return string.Format("{0}+{1}j", Realni, Imaginarni);
         }
 
     }
